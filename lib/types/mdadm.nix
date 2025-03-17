@@ -64,6 +64,8 @@
             --force \
             --homehost=any \
             "''${disk_devices[@]}"
+          echo 'HALLO XKEY ICH BIN EIN REEEEEEEEAAAD'
+          read
           partprobe "/dev/md/${config.name}"
           udevadm trigger --subsystem-match=block
           udevadm settle
